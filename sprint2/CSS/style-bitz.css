@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "MEDIUM";
+    src: url("/sprint2/CSS/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BOLD";
+    src: url("/sprint2/CSS/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TITEL";
+    src: url("/sprint2/CSS/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SERIF";
+    src: url("/sprint2/CSS/American_Typewriter_Bold.woff2") format("woff2");
+}
+
+body {background-color: #72A7FF;
+}
+
+
+.button0{
+    background-image: url(/sprint2/Bilder/Smash-Hits_Logo.svg);
+    background-size: 100%;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+    width:200px;
+    height:150px;
+
+}
+
+
+
+.button1{
+    background-image: url(/sprint2/Bilder/M-Disco.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+    width:200px;
+    height:150px;
+}
+
+.button2{
+    background-image: url(/sprint2/Bilder/M-Bitz.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+    width:200px;
+    height:150px;
+}
+
+.button3{
+    background-image: url(/sprint2/Bilder/M-Review.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+
+    width:200px;
+    height:150px;
+}
+
+
+nav{
+    background-color:;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #EA4F67;
+    text-decoration: none;
+    font-family: "BLACK" ;
+
+}
+
+
+
+
+.card-image {
+padding-top: 200px;
+padding-bottom: 200px;
+background-repeat: no-repeat;
+background-size: 100%;
+height: 300px;
+background-position: center;
+transform: rotate(6deg);
+}
+
+.card-image2 {
+    padding-top: 400px;
+    padding-bottom: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transform: rotate(-4deg);
+    }
+
+.card-Thema {
+    padding-top: 200px;
+    padding-bottom: 330px;
+    background-repeat: no-repeat;
+    background-position: start center;
+    background-size: 50%;
+    }
+
+    .card-image3 {
+        padding-top: 400px;
+        padding-bottom: 400px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        transform: rotate(6deg);
+        }
+
+
+
+
+
+.car-1{
+    background-image: url(/sprint2/Bilder/Streisand.jpg);
+}
+
+.car-2{
+    background-image: url(/sprint2/Bilder/vapors.jpg);
+}
+
+.car-3{
+    background-image: url(/sprint2/Bilder/jones.jpg);
+}
+
+.car-4{
+    background-image: url(/sprint2/Bilder/BITZ.svg);
+}
+
+.car-0{
+    background-image: url(/sprint2/Bilder/Smash-Hits_Logo.svg);
+}
+
+
+.menu-disco{
+    background-image: url(/sprint2/Bilder/M-Bitz.svg);
+}
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding:0;
+    height: 200vh;
+}
+
+.container{
+    margin: 20px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-01{
+    background: green;
+    position: space-between;
+    flex: 1;
+    height: 150px;
+    margin: 10px;
+
+    
+}
+
+
+.card-02{
+    background: ;
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+}
+
+.card-03{
+    background: #FFE66E ;
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-grow: 1.6;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 100px ;
+    transform: rotate(-3deg);
+}
+
+.card-04{
+    background: ;
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 100px ;
+}
+
+.card-05{
+    background: #EA4F67;
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 100px ;
+    transform: rotate(-5deg);
+}
+
+.card-06{
+    background: #262626; ;
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-grow: 1.6;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 100px ;
+    transform: rotate(3deg);
+}
+
+
+h1{
+    color: black;
+    font-family: "BOLD";
+    font-size: 40px;
+}
+
+h2{
+    color: black;
+    font-family: "MEDIUM";
+    font-size: 20px;
+    
+}
+
+h3{
+    color: white;
+    font-family: "MEDIUM";
+    font-size: 20px;
+}
+
+h4{
+    color: #EA4F67;
+    font-family: "TITEL";
+    font-size: 140px;
+}
+
+h5{
+    color: white;
+    font-family: "BOLD";
+    font-size: 140px;
+    text-align: center;
+    
+}
+
+h6{
+    color: white;
+    font-family: "MEDIUM";
+    font-size: 30px;
+    text-align: justify;
+    display: table;
+}
+
+.titel{
+    color: black;
+    font-family: "SERIF";
+    font-size: 90px;
+}
+
+.titel2{
+    color: white;
+    font-family: "SERIF";
+    font-size: 90px;
+}
+
+
+
+
+@media (max-width:810px){
+    .card-01{
+        flex: 100%;
+        max-width: 810px;
+    }
+
+    .card-02{
+        flex: 100%;
+        max-width: 810px;
+    }
+
+    .card-03{
+        flex: 100%;
+        max-width: 810px;
+    }
+
+    .card-04{
+        flex: 100%;
+        max-width: 810px;
+    }
+
+    .card-05{
+        flex: 100%;
+        max-width: 810px;
+    }
+}
+
+@media screen and (min-width: 811px) {
+    h6 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 810px) {
+    h6 {
+      font-size: 20px;
+    }
+  }
+
