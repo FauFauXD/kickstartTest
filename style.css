@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "MEDIUM";
+    src: url("/sprint3/CSS/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BOLD";
+    src: url("/sprint3/CSS/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "LOGO";
+    src: url("/sprint3/CSS/Incised901BT.woff2") format("woff2");
+}
+
+body {background-image: url("/sprint3/Bilder/Muster_alle.svg");
+  background-size: 15vw;
+  background-color: #72A7FF;
+  overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    text-decoration: none;
+    
+  }
+  
+  li {
+    margin: 0 40px;
+    text-decoration: none;
+  }
+  
+  a {
+    max-width: 100%;
+    width: 18vw;
+    font-family: "LOGO";
+    text-decoration: none;
+    color: white;
+    font-size: 8vw;
+    line-height:12vw;
+    -webkit-text-stroke: 5px #EA4F67;
+    text-stroke: 5px #EA4F67;
+    text-shadow: -20px 12px #EA4F67;
+  }
+
+
+  a:hover {
+    color: #EA4F67;
+    -webkit-text-stroke: 5px white;
+    text-stroke: 5px white ;
+    text-shadow: -20px 12px white;
+
+}
+  
