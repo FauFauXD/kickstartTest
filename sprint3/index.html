@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRINT 3</title>
+
+    <style>
+       @font-face {
+    font-family: "MEDIUM";
+    src: url("/sprint2/CSS/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BOLD";
+    src: url("/sprint2/CSS/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TITEL";
+    src: url("/sprint2/CSS/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SERIF";
+    src: url("/sprint2/CSS/American_Typewriter_Bold.woff2") format("woff2");
+}
+
+body {background-image: url("/sprint3/Bilder/Muster1.svg");
+    background-size: 15vw;
+    overflow-x: hidden;
+}
+
+/* Bilder für Logo */
+
+.image-row {
+	display: flex;
+    justify-content: center;
+  }
+  
+  .image-1 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(10px);
+    transform: rotate(-8deg);
+    animation: move-and-rotate 1s infinite;
+    animation-delay: 2s;
+    
+    
+  }
+  
+  .image-2 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(-10px);
+    transform: rotate(8deg);
+    animation: move-and-rotate2 1s infinite;
+    animation-delay: 2s;
+    
+    
+  }
+  
+  .image-3 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(15px);
+    transform: rotate(-12deg);
+    animation: move-and-rotate3 1s infinite;
+    animation-delay: 2s;
+    
+  }
+  
+  .image-4 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(18px); 
+    transform: rotate(23deg);
+    animation: move-and-rotate4 1s infinite;
+    animation-delay: 2s;
+    
+  }
+  
+  .image-5 {
+	width: 6vw; 
+    transform: translateY(-5px);
+    transform: rotate(-4deg);
+    animation: move-and-rotate5 1s infinite;
+    animation-delay: 2s;
+    
+  }
+
+
+  .smash{
+    width: 55vw;
+   margin: auto;
+   background-size: cover;
+   animation: pulse 1s ease-in-out infinite;
+   animation-play-state: running;
+   animation-delay: 2s;
+   }
+
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttoncontainer{
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: flex-end;
+
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #72A7FF;
+    font-family: "BOLD";
+	color: white;
+	border-color: white;
+    border-width: 30px;
+    border-style: solid;
+    border-width: 3px;
+	border-radius: 40px;
+	font-size: 16px;
+    letter-spacing: 0.06em;
+	cursor: pointer;
+    transform: rotate(-5deg)
+}
+
+button:hover {
+	background-color: #EA4F67;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin: 0 40px;
+  }
+  
+  a img {
+    max-width: 100%;
+    width: 18vw;
+  }
+  
+  
+  a img:hover {
+    animation: rotate3 0.5s linear infinite;
+}
+
+
+
+.card-01{
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 30px ;
+}
+
+.card-02{
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 20px;
+}
+
+
+h1{
+    color: black;
+    font-family: "BOLD";
+    font-size: 40px;
+}
+
+h2{
+    color: black;
+    font-family: "MEDIUM";
+    font-size: 20px;
+    
+}
+
+h3{
+    color: black;
+    font-family: "BOLD";
+    font-size: 20px;
+}
+
+h4{
+    color: #EA4F67;
+    font-family: "TITEL";
+    font-size: 140px;
+}
+
+h5{
+    color: white;
+    font-family: "SERIF";
+    font-size: 140px;
+    text-align: center;
+    
+}
+
+h6{
+    color: white;
+    font-family: "MEDIUM";
+    font-size: 30px;
+    text-align: justify;
+    display: table;
+}
+
+.titel{
+    color: black;
+    font-family: "SERIF";
+    font-size: 90px;
+}
+
+
+/* MEDIA-Querry */
+
+@media (max-width:810px) { 
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+            } 
+
+/* ANIMATION */
+
+  
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    85% {
+      transform: scale(1.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+      transform: scale(1);
+    }
+    85% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bewegeBild {
+    0% {
+      transform: translateY(-60px);
+    }
+    75% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(-60px);
+    }
+  }
+
+  @keyframes bewegeBild2 {
+    0% {
+      transform: translateY(100px);
+    }
+    75% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  }
+        .image-row img, .smash {
+            animation-play-state: paused;
+        }
+
+
+    @keyframes move-and-rotate {
+  0% {
+    transform: translateY(110px) rotate(0);
+  }
+  75% {
+    transform: translateY(-60px) rotate(-11deg);
+  }
+  100% {
+    transform: translateY(110px) rotate(0deg);
+  }
+}
+
+@keyframes move-and-rotate2 {
+  0% {
+    transform: translateY(-30px) rotate(0);
+  }
+  75% {
+    transform: translateY(80px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(-30px) rotate(0deg);
+  }
+}
+
+@keyframes move-and-rotate3 {
+  0% {
+    transform: translateY(70px) rotate(0);
+  }
+  75% {
+    transform: translateY(-100px) rotate(-25deg);
+  }
+  100% {
+    transform: translateY(70px) rotate(0deg);
+  }
+}
+
+@keyframes move-and-rotate4 {
+  0% {
+    transform: translateY(-60px) rotate(0);
+  }
+  75% {
+    transform: translateY(100px) rotate(35deg);
+  }
+  100% {
+    transform: translateY(-60px) rotate(0deg);
+  }
+}
+
+@keyframes move-and-rotate5 {
+  0% {
+    transform: translateY(55px) rotate(0);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-8deg);
+  }
+  100% {
+    transform: translateY(55px) rotate(0deg);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="buttoncontainer">
+        <button onclick="togglePlay()"> ▶ BOOGIE DOWN</button>
+    </div>   
+    
+    <div class="row">
+                
+        <div class="card-01">
+           
+            
+
+
+            <div class="image-row">
+                <img src="/sprint3/Bilder/S_Logo.svg" alt="Bild 1" class="image-1">
+                <img src="/sprint3/Bilder/M_Logo.svg" alt="Bild 2" class="image-2">
+                <img src="/sprint3/Bilder/A_Logo.svg" alt="Bild 3" class="image-3">
+                <img src="/sprint3/Bilder/S_Logo.svg" alt="Bild 4" class="image-4">
+                <img src="/sprint3/Bilder/H_Logo.svg" alt="Bild 5" class="image-5">
+              </div>
+
+
+              <div class="smash"> 
+                <img src="/sprint3/Bilder/SMASH.svg" alt="Smash Hits">
+                </div>
+
+        
+    </div>
+
+
+    </div>
+    <div class="card-02">
+        
+        <nav>
+            <ul>
+              <li><a href="/sprint3/Seiten/Disco.html"><img src="/sprint3/Bilder/M-Disco.svg" alt="DISCO"></a></li>
+              <li><a href="/sprint3/Seiten/Bitz.html"><img src="/sprint3/Bilder/M-Bitz.svg" alt="BITZ"></a></li>
+              <li><a href="/sprint3/Seiten/Reviews.html"><img src="/sprint3/Bilder/M-Review.svg" alt="REVIEWS"></a></li>
+            </ul>
+          </nav>
+          
+        
+        
+    </div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="/sprint3/Bilder/1979_Remixed.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+  
+
+    <script>
+        var myAudio = document.getElementById("myAudio");
+        var images = document.querySelectorAll(".image-row img");
+        var smash = document.querySelector(".smash");
+
+        function togglePlay() {
+            if (myAudio.paused) {
+                myAudio.play();
+                images.forEach(image => image.style.animationPlayState = "running");
+                smash.style.animationPlayState = "running";
+                playButton.innerHTML = "■ TAKE A CHILL PILL";
+               
+            } else {
+                myAudio.pause();
+                images.forEach(image => image.style.animationPlayState = "paused");
+                smash.style.animationPlayState = "paused";
+                playButton.innerHTML = "▶ BOOGIE DOWN";
+                
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

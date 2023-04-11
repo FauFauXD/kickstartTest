@@ -1,0 +1,328 @@
+@font-face {
+    font-family: "MEDIUM";
+    src: url("/sprint2/CSS/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BOLD";
+    src: url("/sprint2/CSS/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TITEL";
+    src: url("/sprint2/CSS/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SERIF";
+    src: url("/sprint2/CSS/American_Typewriter_Bold.woff2") format("woff2");
+}
+
+body {background-image: url("/sprint3/Bilder/Muster1.svg");
+    background-size: 15vw;
+    overflow-x: hidden;
+    animation: pulse2 1s ease-in-out infinite;
+    animation-play-state: running;
+}
+
+
+/* Bilder für Logo */
+
+.image-row {
+	display: flex;
+    justify-content: center;
+  }
+  
+  .image-1 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(10px);
+    transform: rotate(-8deg);
+    animation: bewegeBild 1s infinite;
+    
+    
+  }
+  
+  .image-2 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(-10px);
+    transform: rotate(8deg);
+    animation: bewegeBild2 1s infinite;
+    
+    
+  }
+  
+  .image-3 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(15px);
+    transform: rotate(-12deg);
+    animation: bewegeBild 1s infinite;
+    
+  }
+  
+  .image-4 {
+	width: 6vw;
+    margin-right: 1vw;
+    transform: translateY(18px); 
+    transform: rotate(23deg);
+    animation: bewegeBild2 1s infinite;
+    
+  }
+  
+  .image-5 {
+	width: 6vw; 
+    transform: translateY(-5px);
+    transform: rotate(-4deg);
+    animation: bewegeBild 1s infinite;
+    
+  }
+
+
+  .smash{
+    width: 55vw;
+   margin: auto;
+   background-size: cover;
+   animation: pulse 1s ease-in-out infinite;
+   animation-play-state: running;
+   }
+
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttoncontainer{
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: flex-end;
+
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #72A7FF;
+    font-family: "BOLD";
+	color: white;
+	border-color: white;
+    border-width: 30px;
+    border-style: solid;
+    border-width: 3px;
+	border-radius: 40px;
+	font-size: 16px;
+    letter-spacing: 0.06em;
+	cursor: pointer;
+    transform: rotate(-5deg)
+}
+
+button:hover {
+	background-color: #EA4F67;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin: 0 40px;
+  }
+  
+  a img {
+    max-width: 100%;
+    width: 18vw;
+  }
+  
+  
+  a img:hover {
+    animation: rotate3 0.5s linear infinite;
+}
+
+
+
+.card-01{
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 30px ;
+}
+
+.card-02{
+    position: space-between;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 20px;
+}
+
+
+h1{
+    color: black;
+    font-family: "BOLD";
+    font-size: 40px;
+}
+
+h2{
+    color: black;
+    font-family: "MEDIUM";
+    font-size: 20px;
+    
+}
+
+h3{
+    color: black;
+    font-family: "BOLD";
+    font-size: 20px;
+}
+
+h4{
+    color: #EA4F67;
+    font-family: "TITEL";
+    font-size: 140px;
+}
+
+h5{
+    color: white;
+    font-family: "SERIF";
+    font-size: 140px;
+    text-align: center;
+    
+}
+
+h6{
+    color: white;
+    font-family: "MEDIUM";
+    font-size: 30px;
+    text-align: justify;
+    display: table;
+}
+
+.titel{
+    color: black;
+    font-family: "SERIF";
+    font-size: 90px;
+}
+
+
+/* MEDIA-Querry */
+
+@media (max-width:810px){
+    .card-01{
+        flex: 100%;
+        max-width: 810px;
+    }
+
+    .card-02{
+        flex: 100%;
+        max-width: 810px;
+    }
+}
+
+/* ANIMATION */
+
+  
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    85% {
+      transform: scale(1.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+      transform: scale(1);
+    }
+    85% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bewegeBild {
+    0% {
+      transform: translateY(-60px);
+    }
+    75% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(-60px);
+    }
+  }
+
+  @keyframes bewegeBild2 {
+    0% {
+      transform: translateY(100px);
+    }
+    75% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  }
+
+
+
+
